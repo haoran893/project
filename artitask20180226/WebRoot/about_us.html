@@ -1,0 +1,334 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<title>关于我们</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="艺术人生" />
+<script type="application/x-javascript">
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
+</script>
+<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.3&key=b5fb4dc9cf460a0eef274aa1852217a7"></script>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event) {
+            event.preventDefault();
+            $('html,body').animate({
+                scrollTop : $(this.hash).offset().top
+            }, 1200);
+        });
+        var w = $('#vc_map').width();
+        $('#container').css('width', w);
+
+        var map = new AMap.Map('container', {
+            resizeEnable : true,
+            zoom : 13,
+            center : [ 116.39, 39.9 ]
+        });
+        AMap.plugin('AMap.Geocoder', function() {
+            var geocoder = new AMap.Geocoder({
+                city : "010"//城市，默认：“全国”
+            });
+            var marker = new AMap.Marker({
+                map : map,
+                bubble : true
+            })
+            var address = "长沙市开福区芙蓉中路一段416号泊富商业广场14031号";
+            geocoder.getLocation(address, function(status, result) {
+                if (status == 'complete' && result.geocodes.length) {
+                    marker.setPosition(result.geocodes[0].location);
+                    map.setCenter(marker.getPosition())
+                }
+            })
+
+        });
+    });
+</script>
+<!---End-smoth-scrolling---->
+<link rel="stylesheet" href="css/swipebox.css">
+<script src="js/jquery.swipebox.min.js"></script>
+<script type="text/javascript">
+    jQuery(function($) {
+        $(".swipebox").swipebox();
+    });
+</script>
+<!--Animation-->
+<script src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<link href="css/animate.css" rel='stylesheet' type='text/css' />
+<script>
+    new WOW().init();
+</script>
+<link rel="stylesheet" href="css/ace.css">
+<!---/End-Animation---->
+<style>
+
+.col-md-6 .vb_p {
+    text-align: left;
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 45px;
+}
+
+.vc_left {
+    width: 35%;
+}
+
+.vc_right {
+    width: 65%;
+}
+
+.vc_left1 {
+    width: 65%;
+}
+
+.vc_right1 {
+    width: 35%;
+}
+
+embed {
+    height: 415px;
+}
+
+.services-section h1 {
+    font-family: "microsoft yahei";
+    text-align: left;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+.vc_down {
+    margin-top: 25px;
+}
+
+#l_img {
+    width: 102%;
+}
+
+#u_img {
+    width: 160%;
+}
+
+#d_img {
+    width: 160%;
+}
+
+.col-md-4 img {
+    width: 100%;
+}
+
+.col-md-4 p {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.service-grid img {
+    margin: 0px;
+    padding: 0px;
+}
+
+.service-grid img:hover {
+    background: none;
+}
+</style>
+</head>
+
+<body>
+    <div class="header" id="home" style="background: url(images/banner4.jpg) no-repeat 0px 0px;">
+        <div class="container">
+
+            <!-- 导航内容开始 屈海涛  -->
+            <div class="header-top" style="background-color: #ffffff;">
+                <div class="top-menu">
+                    <ul>
+                        <li><a href="index.html"><img src="images/logo1.png"  style="width: 180px;height: 70px;"></a></li>
+                        <li id="about" style="margin-left: 300px;"><a href="about.html">artitask学院</a></li>
+                        <li id="zhuanye"><a href="zhuanye.html">院校专业</a></li>
+                        <li><a href="study_abroad.html">艺术留学</a></li>
+                        <li><a href="master_view.html">全球导师</a></li>
+                        <li><a href="case_show.html">成功案例</a></li>
+                        <li><a href="about_us.html">关于我们</a></li>
+                    </ul>
+                </div>
+                <!--<div class="search">
+                    <form>
+                        <input type="text" value="我要查询.." onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}">
+                        <input type="submit" value="">
+                    </form>
+                </div> -->
+                <div class="clearfix" style="width: 100%;"></div>
+            </div>
+            <div class="top-menu2" id="about-info" style="display:none; height: 150px; z-index: 99999999;width: 200px;position: absolute;  margin-left: 136px;margin-top: -72px;">
+                <ul><li><a href="about.html">artitask学院</a></li></ul>
+                <ul><li><a href="#">studio</a></li></ul>
+                <ul><li><a href="#">workshop</a></li></ul>
+                <ul><li><a href="#">艺术驻地</a></li></ul>
+            </div>
+            <div class="top-menu2" id="zhuanye-info" style="display: none; height: 100px; z-index: 99999999;width: 105px;position: absolute; margin-left: 347px;margin-top: -72px;">
+                <ul><li><a href="zhuanye.html">院校专业</a></li></ul>
+                <ul><li><a href="#">院校</a></li></ul>
+                <ul><li><a href="#">专业</a></li></ul>
+            </div>
+            <!-- 导航内容结束 屈海涛  -->
+
+            <div class="logo logo1">
+                <a href="services.html"><img src="images/logo1.png" class="img-responsive" alt="/"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="services-section">
+            <div class="container">
+                <div class="services-grids">
+                    <div class="service1">
+                        <div
+                            class="col-md-6 services-grid wow bounceInLeft animated vc_left"
+                            data-wow-delay="0.4s"
+                            style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                            <p class="vb_p" style="font-family: microsoft yahei;">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 48px;">artitask </span>是由艺术家于 2014
+					                                   年在纽约发起并创立的国际艺术教育工作室，并于 2016 年正式在长沙成立。 artitask
+					                                   致力于发展当代艺术及创新艺术教育，不仅为学生提供最直接的国际艺术交流机会，
+					                                   并且为当代艺术家们提供创作驻地。由海归艺术家和设计师组成的教研团队具备非常丰富的教学经验，
+					                                   同时继承了纯正的海外艺术教育体系，在实践中不断开发打造维和技法，在设计实践中寻求突破。 artitask
+					                                   艺术家驻最优质的艺术课程，帮助学生在课堂中学习先进的思地项目的展开不但为艺术家创作
+					                                   及发展提供支持，更为学生带来与艺术家零距离工作学习的机会。
+                            </p>
+                        </div>
+                        <div class="col-md-6 services-grid wow bounceIn animated vc_right" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                            <embed wmode="direct"
+                                flashvars="vid=k05563awq8k&amp;tpid=0&amp;showend=1&amp;showcfg=1&amp;searchbar=1&amp;pic=//shp.qpic.cn/qqvideo_ori/0/k05563awq8k_496_280/0&amp;shownext=1&amp;list=2&amp;autoplay=0"
+                                src="https://imgcache.qq.com/tencentvideo_v1/player/TPout.swf?max_age=86400&amp;v=20140714"
+                                quality="high" name="tenvideo_flash_player_1510662897730"
+                                id="tenvideo_flash_player_1510662897730" bgcolor="#000000"
+                                width="100%" height="100%" align="middle"
+                                allowscriptaccess="always" allowfullscreen="true"
+                                type="application/x-shockwave-flash"
+                                pluginspage="http://get.adobe.com/cn/flashplayer/">
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="services-section" style="padding-top: 0px;">
+            <div class="container">
+                <h1>教学环境</h1>
+                <div class="services-grids">
+                    <div class="service1">
+                        <div class="col-md-6 services-grid wow bounceInLeft animated vc_left1" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                            <img id="l_img" src="img/ab_us1.jpg" />
+                        </div>
+                        <div
+                            class="col-md-6 services-grid wow bounceIn animated vc_right1"
+                            data-wow-delay="0.4s"
+                            style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                            <div class="col-md-8 services-grid wow bounceIn animated vc_up"
+                                data-wow-delay="0.4s"
+                                style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                                <img id="u_img" src="img/ab_us2.jpg" />
+                            </div>
+                            <div class="col-md-8 services-grid wow bounceIn animated vc_down"
+                                data-wow-delay="0.4s"
+                                style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                                <img id="d_img" src="img/ab_us3.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="services-section"
+            style="padding-top: 0px; background-color: #fff;">
+            <div class="container">
+                <h1>
+                    <img src="img/ab_us4.jpg" />
+                </h1>
+                <div class="services-grids">
+                    <div class="service1">
+                        <div class="col-md-4 services-grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                            <img src="img/ab_us5.jpg" />
+                            <p>湖南师范大学美术学院</p>
+                        </div>
+                        <div class="col-md-4 services-grid wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                            <img src="img/ab_us6.jpg" />
+                            <p>LOU MAN 伦敦建筑事务所</p>
+                        </div>
+                        <div class="col-md-4 services-grid wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                            <img src="img/ab_us7.jpg" />
+                            <p>伊萨卡画室</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="service-section1" style="padding-top: 0px;">
+        <div class="container" id="vc_map">
+            <div class="service-grids">
+                <div class="col-md-1 service-grid wow bounceInLeft animated" data-wow-delay="0.4s"  style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                    <div id="container" style="height: 300px;"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="categories-section">
+        <div class="container">
+            <div class="footer-grids">
+                <div class="col-md-4 up wow bounceInLeft animated"
+                    data-wow-delay="0.4s"
+                    style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                    <h3>微信公众号</h3>
+                    <div class="up1">
+                            <img src="images/123.jpg" alt="" style="width: 50%;height：50%；">
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 cat wow bounceIn animated"
+                    data-wow-delay="0.4s"
+                    style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                    <h3>联系邮箱</h3>
+                    <ul>
+                        <li><i class="message"></i></li>
+                        <li><i href="info@artitask.com">info@artitask.com</i></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 cont wow bounceInRight animated"
+                    data-wow-delay="0.4s"
+                    style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                    <h3>联系方式</h3>
+                    <ul>
+                        <li><i class="phone"></i></li>
+                        <li><p>0731-85574633</p></li>
+                    </ul>
+                    <ul>
+                        <li><i class="smartphone"></i></li>
+                        <li><p>长沙市开福区芙蓉中路一段416号泊富商业广场14031号</p></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $().UItoTop({ easingType: 'easeOutQuart' });
+        });
+    </script>
+</body>
+
+</html>

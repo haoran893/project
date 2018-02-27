@@ -1,0 +1,22 @@
+﻿@charset "utf-8";
+
+/* body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,img,dl,dt,dd,table,th,td,blockquote,fieldset,div,strong,label,em{margin:0;padding:0;border:0;}*/
+/* ul,ol,li{list-style:none;}*/
+ 
+#slides{ width:100%; margin:20px 0px 0px 20px; height:240px; overflow:hidden; position:relative;}
+.slides_container li{ width:100%; float:left;}
+.slides_container li a{ display:inline-block; width:220px; height:170px; border:2px solid #fff;}
+.slides_container li a img{ width:210px; height:170px;}
+.slides_container li a span{ display:block; width:220px; cursor:pointer; height:30px; line-height:30px; background:#262626; color:#fff;}
+.slides_container li a:hover{ border:2px solid #ff8400;}
+.slides_container li a:hover span{ color:#ff8400;}
+
+.pagination{ position:absolute; left:550px; z-index:10; top:190px;}
+.pagination li{ float:left; padding-right:7px;}
+.pagination a{ display:block; outline:none; background:url(../images/pg.gif) no-repeat 0px 0px; text-indent:-999em; width:3px; height:3px;}
+.pagination li.current a{ background-position:-22px 0;}
+
+.prev{ background:url(../images/arr.png) no-repeat; width:29px; height:43px; display:block; left:1px; top:50px; position:absolute; text-indent:-999em; outline:none; z-index:11;}
+.prev:hover{ background-position:0 -43px;}
+.next{ background:url(../images/arr.png) no-repeat -29px 0; width:29px; height:43px; display:block; right:1px; top:50px; position:absolute; text-indent:-999em;outline:none;z-index:11;}
+.next:hover{ background-position:-29px -43px;}
