@@ -4,7 +4,6 @@ html {
   position: relative;
 }
 body {
-  background-color: #e4e6e9;
   min-height: 100%;
   padding-bottom: 0;
   font-family: 'Open Sans';
@@ -8764,7 +8763,7 @@ input[type="color"]:focus {
   outline: none;
 }
 
-/** Çüº£ÌÎ£¬ È¥³ı»ğºüµÄÉÏÏÂ¼ıÍ·ÒıÈëµÄcss */
+/** ï¿½ï¿½ï¿½Î£ï¿½ È¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½css */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button{-webkit-appearance: none !important;}
 input[type="number"]{-moz-appearance:textfield;}

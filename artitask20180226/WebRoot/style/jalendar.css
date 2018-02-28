@@ -28,6 +28,7 @@
     border-top: 1px solid #e1bf89;
     border-right: 1px solid #b4925d;
     border-left: 1px solid #b4925d;
+    border-bottom: 1px solid #B4925D;
     display: inline-block;
     z-index: 2;
 }
