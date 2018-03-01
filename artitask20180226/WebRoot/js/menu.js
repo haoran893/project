@@ -3,26 +3,6 @@ $("span.menu").click(function() {
 });
 
 $(function() {
-
-	$.ajax({
-	type: "POST",
-   	url: "getdate.php",
-   	data: "date=20180228",
-   	success: function(msg){
-       var msg=JSON.parse(msg);
-       console.log(msg.content);
-   }
-})
-		$.ajax({
-	type: "GET",
-   	url: "getcontent.php",
-   	success: function(msg){
-       var msg=JSON.parse(msg);
-       $('.gradient-wood').html(msg.content);
-   }
-})
-
-	
 	$("#about").hover(function() {
 		$("#about-info").show();
 	}, function() {

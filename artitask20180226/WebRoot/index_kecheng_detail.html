@@ -46,6 +46,9 @@
 <link rel="stylesheet" href="css/ace.css">
 <link rel="stylesheet" href="css/gundong.css">
 
+<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+<script src="js/swiper.js"></script>
+
 <style>
     .vc_top{
         width: 290px;
@@ -56,6 +59,9 @@
         background-color:#000000;/* IE6和部分IE7内核的浏览器(如QQ浏览器)下颜色被覆盖 */
         background-color:rgba(0,0,0,0.8); /* IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂，但解析为透明 */
         padding: 10px 8px 5px;
+        position:absolute;
+        top:0;
+        right:0;
     }
     .vc_top p{
         color: #fff;
@@ -104,60 +110,61 @@
 
 </head>
 <body>
-<div class="header" id="home" style="background: url(images/banner4.jpg) no-repeat 0px 0px;">
-   <div class="container">
-
-            <!-- 导航内容开始  -->
-            <div class="header-top" style="background-color: #ffffff;">
-                <div class="top-menu">
-                    <ul>
-                        <li style="margin:0 1em;top:0;"><a href="index.html" style="border:none;"><img src="images/logo1.png"  style="width: 180px;height: 70px;"></a></li>
-                        <li id="about"><a href="about.html">artitask学院</a>
-                        	<ul id="ats-menu2" class="clearfix">
-                        		<li><a href="#">studio</a></li>
-                        		<li><a href="#">workshop</a></li>
-                        		<li><a href="#">艺术驻地</a></li>
-                        	</ul>
-                        </li>
-                        <li id="zhuanye"><a href="zhuanye.html">院校专业</a>
-                        	<ul id="zy-menu2" class="clearfix">
-                        		<li><a href="#">院校</a></li>
-                        		<li><a href="#">专业</a></li>
-                        	</ul>
-                        </li>
-                        <li><a href="study_abroad.html">艺术留学</a></li>
-                        <li><a href="master_view.html">全球导师</a></li>
-                        <li><a href="case_show.html">成功案例</a></li>
-                        <li><a href="about_us.html">关于我们</a></li><!--  class="active" -->
-                    </ul>
-                </div>
-                <!--<div class="search">
-                    <form>
-                        <input type="text" value="我要查询.." onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}">
-                        <input type="submit" value="">
-                    </form>
-                </div> -->
-                <div class="clearfix" style="width: 100%;"></div>
-            </div>
-            <!-- 导航内容结束 -->
+	<!-- 导航内容开始  -->
+	<div style="background:#fff;margin-bottom:10px;">
+		<div class="container">
+			<div class="header-top">
+			    <div class="top-menu">
+			        <ul>
+			            <li style="margin:0 1em;top:0;"><a href="index.html" style="border:none;"><img src="images/logo1.png"></a></li>
+			            <li id="about"><a href="about.html">artitask学院</a>
+			            	<ul id="ats-menu2" class="clearfix">
+			            		<li><a href="#">studio</a></li>
+			            		<li><a href="#">workshop</a></li>
+			            		<li><a href="#">艺术驻地</a></li>
+			            	</ul>
+			            </li>
+			            <li id="zhuanye"><a href="zhuanye.html">院校专业</a>
+			            	<ul id="zy-menu2" class="clearfix">
+			            		<li><a href="#">院校</a></li>
+			            		<li><a href="#">专业</a></li>
+			            	</ul>
+			            </li>
+			            <li><a href="study_abroad.html">艺术留学</a></li>
+			            <li><a href="master_view.html">全球导师</a></li>
+			            <li><a href="case_show.html">成功案例</a></li>
+			            <li><a href="about_us.html">关于我们</a></li><!--  class="active" -->
+			        </ul>
+			    </div>
+			    <!--<div class="search">
+			        <form>
+			            <input type="text" value="我要查询.." onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}">
+			            <input type="submit" value="">
+			        </form>
+			    </div> -->
+			</div>
+		</div>
+	</div>
+	<!-- 导航内容结束 -->
+	
+<div class="header" id="home">
+    <div class="container">
+		<div class="about-grids">
+			<div class="col-md-12 news-grid wow bounceInRight animated" style="position:relative;">
+				<img src="images/index/kecheng/9.jpg"/>
+				<div class="vc_top">
+	                <b>服装设计</b>
+	                <p>
+	                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;服装设计师（Apparel Designer）直接设计的是产品，间接设计的是人品和社会。随着科学与文明的进步，人类的艺术设计手段也在不断发展。信息时代，人类的文化传播方式与以前相比有了很大变化，严格的行业之间的界限正在淡化。服装设计师的想象力迅速冲破意识形态的禁锢，以千姿百态的形式释放出来。
+	                </p>
+	            </div>
+			</div>
+		</div>
     </div>
 </div>
 
 	<div class="content">
 	
-		<div class="container">
-			<div class="about-grids">
-				<div class="col-md-12 news-grid wow bounceInRight animated" data-wow-delay="0.4s"	style="background: url(images/index/kecheng/9.jpg);height: 500px;">
-					<div class="vc_top">
-		                <b>服装设计</b>
-		                <p>
-		                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;服装设计师（Apparel Designer）直接设计的是产品，间接设计的是人品和社会。随着科学与文明的进步，人类的艺术设计手段也在不断发展。信息时代，人类的文化传播方式与以前相比有了很大变化，严格的行业之间的界限正在淡化。服装设计师的想象力迅速冲破意识形态的禁锢，以千姿百态的形式释放出来。
-		                </p>
-		            </div>
-				</div>
-			</div>
-		</div>
-
 		<div class="service-section">
 			<div class="container">
 				<div class="container">
@@ -182,68 +189,82 @@
         <div class="service-section" style="margin-top: -70px;">
             <div class="container">
                 <h3>学生作品</h3>
-                <div id="slides">
-			        <ul class="slides_container">
-			            <li>
-			                <a href="index_kecheng_workshop.html" target="_blank"><img src="images/index/zuopin/1.jpg" /><span>“牡丹亭”——侯庆艺术展</span></a>
-			                <a href="index_kecheng_workshop.html" target="_blank"><img src="images/index/zuopin/2.jpg" /><span>“牡丹亭”——侯庆艺术展</span></a>
-			                <a href="index_kecheng_workshop.html" target="_blank"><img src="images/index/zuopin/3.jpg" /><span>“牡丹亭”——侯庆艺术展</span></a>
-			                <a href="index_kecheng_workshop.html" target="_blank"><img src="images/index/zuopin/4.jpg" /><span>“牡丹亭”——侯庆艺术展</span></a>
-			                <a href="index_kecheng_workshop.html" target="_blank"><img src="images/index/zuopin/4.jpg" /><span>“牡丹亭”——侯庆艺术展</span></a>
-			            </li>
-			            <li>
-			                <a href="index_kecheng_workshop.html" target="_blank"><img src="images/index/zuopin/1.jpg" /><span>“牡丹亭”——侯庆艺术展</span></a>
-			                <a href="index_kecheng_workshop.html" target="_blank"><img src="images/index/zuopin/2.jpg" /><span>“牡丹亭”——侯庆艺术展</span></a>
-			                <a href="index_kecheng_workshop.html" target="_blank"><img src="images/index/zuopin/3.jpg" /><span>“牡丹亭”——侯庆艺术展</span></a>
-			                <a href="index_kecheng_workshop.html" target="_blank"><img src="images/index/zuopin/4.jpg" /><span>“牡丹亭”——侯庆艺术展</span></a>
-			                <a href="index_kecheng_workshop.html" target="_blank"><img src="images/index/zuopin/4.jpg" /><span>“牡丹亭”——侯庆艺术展</span></a>
-			            </li>
-			        </ul>
-			        <!--<a href="#" class="prev">prev</a> <a href="#" class="next">next</a>  -->
-	            </div>
+                <div class="swiper-container swiper-cs" style="width:750px;margin:0 auto;">
+			    	<div class="swiper-wrapper">
+			    		<div class="swiper-slide">
+			    			<img src="images/banner3.jpg"/>
+			    		</div>
+			    		<div class="swiper-slide">
+			    			<img src="images/banner4.jpg"/>
+			    		</div>
+			    		<div class="swiper-slide">
+			    			<img src="images/banner5.jpg"/>
+			    		</div>
+			    	</div>
+			    	<!-- Add Pagination -->
+			        <div class="swiper-pagination"></div>
+			        <!-- Add Arrows -->
+			        <div class="swiper-button-next"></div>
+			        <div class="swiper-button-prev"></div>
+			    </div>
+			    
+		     	<script>
+			 		var swiper = new Swiper(".swiper-cs",{
+			 			pagination: '.swiper-pagination',
+				        paginationClickable: true,
+				        nextButton: '.swiper-button-next',
+				        prevButton: '.swiper-button-prev',
+				        spaceBetween: 30
+			 		});
+			 	</script>
+			    
             </div>
         </div>
 
  </div>
  
-	<div class="categories-section">
-		<div class="container">
-			<div class="footer-grids">
-				<div class="col-md-4 up wow bounceInLeft animated"
-					data-wow-delay="0.4s"
-					style="visibility: visible; -webkit-animation-delay: 0.4s;">
-					<h3>微信公众号</h3>
-					<div class="up1">
-							<img src="images/123.jpg" alt="" style="width: 50%;height：50%；">
-						<div class="clearfix"></div>
-					</div>
-				</div>
-				<div class="col-md-4 cat wow bounceIn animated"
-					data-wow-delay="0.4s"
-					style="visibility: visible; -webkit-animation-delay: 0.4s;">
-					<h3>联系邮箱</h3>
-					<ul>
-						<li><i class="message"></i></li>
-						<li><i href="info@artitask.com">info@artitask.com</i></li>
-					</ul>
-				</div>
-				<div class="col-md-4 cont wow bounceInRight animated"
-					data-wow-delay="0.4s"
-					style="visibility: visible; -webkit-animation-delay: 0.4s;">
-					<h3>联系方式</h3>
-					<ul>
-						<li><i class="phone"></i></li>
-						<li><p>0731-85574633</p></li>
-					</ul>
-					<ul>
-						<li><i class="smartphone"></i></li>
-						<li><p>长沙市开福区芙蓉中路一段416号泊富商业广场14031号</p></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-	</div>
+    <div class="categories-section">
+        <div class="container">
+            <div class="footer-grids">
+                <div class="col-md-4 up wow bounceInLeft animated"
+                    data-wow-delay="0.4s"
+                    style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                    <h3>微信公众号</h3>
+                    <div class="up1">
+                            <img src="images/123.jpg" alt="" style="width: 50%;height：50%；">
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <!--<h3>联系邮箱</h3>
+                    <ul>
+                        <li><i class="message"></i></li>
+                        <li><i href="info@artitask.com">info@artitask.com</i></li>
+                    </ul>-->
+                </div>
+                <div class="col-md-6 cont wow bounceInRight animated"
+                    data-wow-delay="0.4s"
+                    style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                    <h3>联系方式</h3>
+                    <ul>
+                    	<li>
+                    		<h4 class="white">Email:</h4>
+                    		<h4 class="white">info@artitask.com</h4>
+                    	</li>
+                        <li>
+                        	<h4 class="white">联系电话:</h4>
+                        	<h4 class="white">0731-85574633</h4>
+                        </li>
+                        <li>
+                        	<h4 class="white">机构地址:</h4>
+                        	<h4 class="white">长沙市开福区芙蓉中路一段416号泊富商业广场14031号</h4>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
 
     <script type="text/javascript" src="js/gundong.js"></script>
     

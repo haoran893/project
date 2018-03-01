@@ -35,3 +35,4 @@ $('.before img').click(function(){
 		$('.scroll').animate({left:-_index1*750},500);
 	}
 });
+

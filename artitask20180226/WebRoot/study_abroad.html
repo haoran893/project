@@ -49,6 +49,9 @@
 	    margin-top: 75px;
 		background-color:#000000;/* IE6和部分IE7内核的浏览器(如QQ浏览器)下颜色被覆盖 */
   		background-color:rgba(0,0,0,0.5); /* IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂，但解析为透明 */
+  		position:absolute;
+  		top:0;
+  		right:0;
 	}
 	.vc_top p{
 		color: #fff;
@@ -138,12 +141,12 @@
 </head>
 <body>
 	<!-- 导航内容开始  -->
-	<div style="background:#fff;">
+	<div style="background:#fff;margin-bottom:10px;">
 		<div class="container">
 			<div class="header-top">
 			    <div class="top-menu">
 			        <ul>
-			            <li style="margin:0 1em;top:0;"><a href="index.html" style="border:none;"><img src="images/logo1.png"  style="width: 180px;height: 70px;"></a></li>
+			            <li style="margin:0 1em;top:0;"><a href="index.html" style="border:none;"><img src="images/logo1.png"></a></li>
 			            <li id="about"><a href="about.html">artitask学院</a>
 			            	<ul id="ats-menu2" class="clearfix">
 			            		<li><a href="#">studio</a></li>
@@ -173,8 +176,8 @@
 		</div>
 	</div>
 	<!-- 导航内容结束 -->
-	<div class="header" id="home" style="background: url(img/s_b1.png) no-repeat 0px 0px;background-position: center;">
-		<div class="container">
+	<div class="header" id="home" style="position:relative">
+		<img src="img/s_b1.png"/>
         
 			<div class="vc_top">
 				<h1>Artitask 介绍</h1>
@@ -188,7 +191,6 @@
 					更为学生带来与艺术家零距离工作学习的机会。
 				</p>
 			</div>
-		</div>
 	</div>
 
 	<div class="content">
@@ -198,34 +200,34 @@
 					<div class="service1">
 						<h3>VIP保送计划</h3>
 						<div class="vrt_left">
-							<div class="col-md-3 services-grid wow bounceInLeft animated vc_img" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-								<a href="#"><div class="vt_b">美国（本科）</div></a>
+							<div class="col-md-3 services-grid wow bounceInLeft animated vc_img vip_lv1" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+								<a href="javascript:void(0)"><div class="vt_b">美国（本科）</div></a>
 							</div>
-							<div class="col-md-3 services-grid wow bounceInLeft animated vc_img" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-								<a href="#"><div class="vt_b">美国（硕士）</div></a>
+							<div class="col-md-3 services-grid wow bounceInLeft animated vc_img vip_lv1" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+								<a href="javascript:void(0)"><div class="vt_b">美国（硕士）</div></a>
 							</div>
-							<div class="col-md-3 services-grid wow bounceInLeft animated vc_img" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-								<a href="#"><div class="vt_b">英国（本科）</div></a>
+							<div class="col-md-3 services-grid wow bounceInLeft animated vc_img vip_lv1" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+								<a href="javascript:void(0)"><div class="vt_b">英国（本科）</div></a>
 							</div>
-							<div class="col-md-3 services-grid wow bounceInLeft animated vc_img" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-								<a href="#"><div class="vt_b">英国（硕士）</div></a>
+							<div class="col-md-3 services-grid wow bounceInLeft animated vc_img vip_lv1" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+								<a href="javascript:void(0)"><div class="vt_b">英国（硕士）</div></a>
 							</div>
 						</div>
 						<div class="vrt_right">
-							<div class="col-md-2 services-grid wow bounceInLeft animated vc_img" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-							<a href="#"><div class="vt_c">TOP 1</div></a>
+							<div class="col-md-2 services-grid wow bounceInLeft animated vc_img vip_lv2 vip_lv2_top1" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+							<a href="javascript:void(0)"><div class="vt_c">TOP 1</div></a>
 							</div>
-						<div class="col-md-2 services-grid wow bounceInLeft animated vc_img" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;margin-left: 40px;">
-							<a href="#"><div class="vt_c">TOP 3</div></a>
+						<div class="col-md-2 services-grid wow bounceInLeft animated vc_img vip_lv2 vip_lv2_top3" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;margin-left: 40px;">
+							<a href="javascript:void(0)"><div class="vt_c">TOP 3</div></a>
 							</div>
-							<div class="col-md-2 services-grid wow bounceInLeft animated vc_img" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;margin-left: 51px;">
-							<a href="#"><div class="vt_c">TOP 5</div></a>
+							<div class="col-md-2 services-grid wow bounceInLeft animated vc_img vip_lv2 vip_lv2_top3" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;margin-left: 51px;">
+							<a href="javascript:void(0)"><div class="vt_c">TOP 5</div></a>
 							</div>
-							<div class="col-md-2 services-grid wow bounceInLeft animated vc_img" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;margin-left: 58px;">
-							<a href="#"><div class="vt_c">TOP 10</div></a>
+							<div class="col-md-2 services-grid wow bounceInLeft animated vc_img vip_lv2 vip_lv2_top10" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;margin-left: 58px;">
+							<a href="javascript:void(0)"><div class="vt_c">TOP 10</div></a>
 							</div>
-							<div class="col-md-2 services-grid wow bounceInLeft animated vc_img" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;margin-left: 32px;">
-							<a href="#"><div class="vt_c">TOP 15</div></a>
+							<div class="col-md-2 services-grid wow bounceInLeft animated vc_img vip_lv2 vip_lv2_top15" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;margin-left: 32px;">
+							<a href="javascript:void(0)"><div class="vt_c">TOP 15</div></a>
 							</div>
 						</div>
 					</div>
@@ -233,6 +235,62 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			$(".vip_lv1").click(function(){
+				$(".vip_lv1").find(".vt_b").css("color","#000");
+				$(".vip_lv1").removeClass("vip_lv1_on");
+				$(this).addClass("vip_lv1_on");
+			});
+			
+			$(".vip_lv2").click(function(){
+				if($(".vip_lv1").hasClass("vip_lv1_on")){
+					$(".vip_lv2").find(".vt_c").css("color","#000");
+					$(".vip_lv2").find(".vt_c").removeClass("vip_lv2_on");
+					$(this).find(".vt_c").addClass("vip_lv2_on");
+				}else{
+					alert("请选择国家和学位");
+					return false;
+				}
+			});
+			
+			$(".vip_lv2_top1").click(function(){
+				$(".vc_img img").css("filter","none");
+				$(".im_a img").css("filter","none");
+			})
+			
+			$(".vip_lv2_top3").click(function(){
+				$(".vc_img img").css("filter","none");
+				$(".im_a img").css("filter","none");
+				if($(this).find("div").hasClass("vip_lv2_on")){
+					$(".vip_top3 img").css("filter","grayscale(100%)");
+				}else{
+					return false;
+				}
+			});
+			
+			$(".vip_lv2_top10").click(function(){
+				$(".vc_img img").css("filter","none");
+				$(".im_a img").css("filter","none");
+				if($(this).find("div").hasClass("vip_lv2_on")){
+					$(".vip_top10 img").css("filter","grayscale(100%)");
+					$(".vip_top3 img").css("filter","grayscale(100%)");
+				}else{
+					return false;
+				}
+			});
+			
+			$(".vip_lv2_top15").click(function(){
+				$(".vc_img img").css("filter","none");
+				$(".im_a img").css("filter","none");
+				if($(this).find("div").hasClass("vip_lv2_on")){
+					$(".vip_top10 img").css("filter","grayscale(100%)");
+					$(".vip_top3 img").css("filter","grayscale(100%)");
+					$(".vip_top15 img").css("filter","grayscale(100%)");
+				}else{
+					return false;
+				}
+			})
+		</script>
 		<div class="services-section">
 			<div class="container">
 				<div class="services-grids">
@@ -248,7 +306,7 @@
 						<p class="vc_p_up"><b>art theory教学板块</b></p>
 						<p class="vc_p_down">基础艺术理论，艺术史，构建艺术框架</p>
 						</div>
-						<div class="col-md-3 services-grid wow bounceInLeft animated vc_img" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+						<div class="col-md-3 services-grid wow bounceInLeft animated vc_img vip_top15" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 						<img src="img/s_b4.jpg" />
 						<p class="vc_p_up"><b>Art English 艺术语言专业训练板块</b></p>
 						<p class="vc_p_down">囊括艺术专业写作指导，作品描述策略</p>
@@ -265,7 +323,7 @@
                         <p class="vc_p_up"><b>专业强化板块（研究生）</b></p>
                         <p class="vc_p_down">真对所学专业进行专业技能强化</p>
                         </div>
-                        <div class="col-md-3 services-grid wow bounceInLeft animated vc_img" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                        <div class="col-md-3 services-grid wow bounceInLeft animated vc_img vip_top10" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
                         <img src="img/s_b3.jpg" />
                         <p class="vc_p_up"><b>艺术Foundation Course（本科）</b></p>
                         <p class="vc_p_down">艺术思维训练、真的提升艺术素养、培养创作习惯而设计，囊括MICA foundation学习精华课程</p>
@@ -300,7 +358,7 @@
 							<p><b>作品集专业排版</b></p>
 						</div>
 						<div class="to_bom"></div>
-						<div class="col-md-6 services-grid wow bounceInLeft animated im_a" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+						<div class="col-md-6 services-grid wow bounceInLeft animated im_a vip_top3" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 							<img src="img/s_b5.jpg" />
 							<p><b>超长服务周期</b></p>
 						</div>
@@ -333,43 +391,47 @@
 			</div>
 		</div>
 	</div>
-	<div class="categories-section">
-		<div class="container">
-			<div class="footer-grids">
-				<div class="col-md-4 up wow bounceInLeft animated"
-					data-wow-delay="0.4s"
-					style="visibility: visible; -webkit-animation-delay: 0.4s;">
-					<h3>微信公众号</h3>
-					<div class="up1">
-							<img src="images/123.jpg" alt="" style="width: 50%;height：50%；">
-						<div class="clearfix"></div>
-					</div>
-				</div>
-				<div class="col-md-4 cat wow bounceIn animated"
-					data-wow-delay="0.4s"
-					style="visibility: visible; -webkit-animation-delay: 0.4s;">
-					<h3>联系邮箱</h3>
-					<ul>
-						<li><i class="message"></i></li>
-						<li><i href="info@artitask.com">info@artitask.com</i></li>
-					</ul>
-				</div>
-				<div class="col-md-4 cont wow bounceInRight animated"
-					data-wow-delay="0.4s"
-					style="visibility: visible; -webkit-animation-delay: 0.4s;">
-					<h3>联系方式</h3>
-					<ul>
-						<li><i class="phone"></i></li>
-						<li><p>0731-85574633</p></li>
-					</ul>
-					<ul>
-						<li><i class="smartphone"></i></li>
-						<li><p>长沙市开福区芙蓉中路一段416号泊富商业广场14031号</p></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-	</div>
+    <div class="categories-section">
+        <div class="container">
+            <div class="footer-grids">
+                <div class="col-md-4 up wow bounceInLeft animated"
+                    data-wow-delay="0.4s"
+                    style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                    <h3>微信公众号</h3>
+                    <div class="up1">
+                            <img src="images/123.jpg" alt="" style="width: 50%;height：50%；">
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <!--<h3>联系邮箱</h3>
+                    <ul>
+                        <li><i class="message"></i></li>
+                        <li><i href="info@artitask.com">info@artitask.com</i></li>
+                    </ul>-->
+                </div>
+                <div class="col-md-6 cont wow bounceInRight animated"
+                    data-wow-delay="0.4s"
+                    style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                    <h3>联系方式</h3>
+                    <ul>
+                    	<li>
+                    		<h4 class="white">Email:</h4>
+                    		<h4 class="white">info@artitask.com</h4>
+                    	</li>
+                        <li>
+                        	<h4 class="white">联系电话:</h4>
+                        	<h4 class="white">0731-85574633</h4>
+                        </li>
+                        <li>
+                        	<h4 class="white">机构地址:</h4>
+                        	<h4 class="white">长沙市开福区芙蓉中路一段416号泊富商业广场14031号</h4>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
