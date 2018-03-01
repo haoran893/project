@@ -40,13 +40,11 @@
     new WOW().init();
 </script>-->
 <!---/End-Animation---->
-
+<script type="text/javascript" src="js/menu.js"></script>
 <link rel="stylesheet" href="css/lunbo_index.css" type="text/css" />
-
 <link rel="stylesheet" href="style/documentation.css" type="text/css" />
 <link rel="stylesheet" href="style/jalendar.css" type="text/css" />
 <script type="text/javascript" src="js/jalendar.js"></script>
-<script type="text/javascript" src="js/menu.js"></script>
 
 <link rel="stylesheet" type="text/css" href="css/swiper.css"/>
 <script src="js/swiper.js"></script>
@@ -182,9 +180,7 @@
                     <div class="news-grids">
                         <div class="col-md-12 about-img wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;height:420px;float:left;">
                             <div id="myId3" class="jalendar mid" style="text-align: center; clear: both;float:left;">
-                                <div class="added-event" data-date="11/2/2018" data-time="10:00" data-nbsp=" " data-class="毕业班" data-teacher="王老师" data-title="平面设计"></div>
-                                <div class="added-event" data-date="11/2/2018" data-time="10:00" data-nbsp=" " data-class="强训班" data-teacher="王老师" data-title="平面设计"></div>
-                                <div class="added-event" data-date="10/2/2018" data-time="10:00" data-nbsp=" " data-class="强训班" data-teacher="王老师" data-title="平面设计"></div>
+                            	 
                             </div>
                         </div>
                     </div>
@@ -280,8 +276,10 @@
             $('#myId3').jalendar({
                 customDay : dataStr,
                 color : '#808080',
-                lang : 'EN'
+                lang : 'EN',
+                
             });
+            
             /*
             var dropdown = new Array($this.find('.add-time .select span'), $this.find('.add-time .select .dropdown .option'), $this.find('.add-time .select'));
             $('html').click(function() {
