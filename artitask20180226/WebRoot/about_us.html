@@ -30,12 +30,10 @@
         var map = new AMap.Map('container', {
             resizeEnable : true,
             zoom : 13,
-            center : [ 116.39, 39.9 ]
+            center : [112.9857802391, 28.2086864242]
         });
         AMap.plugin('AMap.Geocoder', function() {
-            var geocoder = new AMap.Geocoder({
-                city : "010"//城市，默认：“全国”
-            });
+            
             var marker = new AMap.Marker({
                 map : map,
                 bubble : true
@@ -114,10 +112,13 @@ embed {
 
 #u_img {
     width: 160%;
+    height:230px;
+    margin-bottom:17px;
 }
 
 #d_img {
     width: 160%;
+    height:230px;
 }
 
 .col-md-4 img {
@@ -148,23 +149,23 @@ embed {
 			    <div class="top-menu">
 			        <ul>
 			            <li style="margin:0 1em;top:0;"><a href="index.html" style="border:none;"><img src="images/logo1.png"></a></li>
-			            <li id="about"><a href="about.html">artitask学院</a>
+			            <li id="about"><a href="javascript:void(0)">artitask学院</a>
 			            	<ul id="ats-menu2" class="clearfix">
-			            		<li><a href="#">studio</a></li>
-			            		<li><a href="#">workshop</a></li>
-			            		<li><a href="#">艺术驻地</a></li>
+			            		<li><a href="studio.html">studio</a></li>
+			            		<li><a href="workshop.html">workshop</a></li>
+			            		<li><a href="air.html">艺术驻地</a></li>
 			            	</ul>
 			            </li>
-			            <li id="zhuanye"><a href="zhuanye.html">院校专业</a>
+			            <li id="zhuanye"><a href="javascript:void(0)">院校专业</a>
 			            	<ul id="zy-menu2" class="clearfix">
-			            		<li><a href="#">院校</a></li>
-			            		<li><a href="#">专业</a></li>
+			            		<li><a href="school.html">院校</a></li>
+			            		<li><a href="major.html">专业</a></li>
 			            	</ul>
 			            </li>
-			            <li><a href="study_abroad.html">艺术留学</a></li>
-			            <li><a href="master_view.html">全球导师</a></li>
-			            <li><a href="case_show.html">成功案例</a></li>
-			            <li><a href="about_us.html">关于我们</a></li><!--  class="active" -->
+			            <li><a href="product.html">艺术留学</a></li>
+			            <li><a href="master.html">全球导师</a></li>
+			            <li><a href="caseshow.html">成功案例</a></li>
+			            <li><a href="about.html">关于我们</a></li><!--  class="active" -->
 			        </ul>
 			    </div>
 			    <!--<div class="search">
@@ -179,9 +180,6 @@ embed {
 	<!-- 导航内容结束 -->
     <div class="header" id="home" style="position:relative;">
     	<img src="images/banner4.jpg"/>
-        <div class="">
-            <a href="services.html"><img src="images/logo1.png" class="img-responsive" alt="/" style="position:absolute;top:0;left:0;right:0;bottom:0;margin:auto;"></a>
-        </div>
     </div>
 
     <div class="content">
@@ -204,15 +202,7 @@ embed {
                             </p>
                         </div>
                         <div class="col-md-6 services-grid wow bounceIn animated vc_right" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-                            <embed wmode="direct"
-                                flashvars="vid=k05563awq8k&amp;tpid=0&amp;showend=1&amp;showcfg=1&amp;searchbar=1&amp;pic=//shp.qpic.cn/qqvideo_ori/0/k05563awq8k_496_280/0&amp;shownext=1&amp;list=2&amp;autoplay=0"
-                                src="https://imgcache.qq.com/tencentvideo_v1/player/TPout.swf?max_age=86400&amp;v=20140714"
-                                quality="high" name="tenvideo_flash_player_1510662897730"
-                                id="tenvideo_flash_player_1510662897730" bgcolor="#000000"
-                                width="100%" height="100%" align="middle"
-                                allowscriptaccess="always" allowfullscreen="true"
-                                type="application/x-shockwave-flash"
-                                pluginspage="http://get.adobe.com/cn/flashplayer/">
+                            <video src="video/1.mp4" controls="controls" style="height:400px;max-width:100%;"></video>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -225,22 +215,18 @@ embed {
                 <div class="services-grids">
                     <div class="service1">
                         <div class="col-md-6 services-grid wow bounceInLeft animated vc_left1" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-                            <img id="l_img" src="img/ab_us1.jpg" />
+                            <img id="l_img" src="img/ab_us1.png" />
                         </div>
                         <div
                             class="col-md-6 services-grid wow bounceIn animated vc_right1"
                             data-wow-delay="0.4s"
                             style="visibility: visible; -webkit-animation-delay: 0.4s;">
-                            <div class="col-md-8 services-grid wow bounceIn animated vc_up"
-                                data-wow-delay="0.4s"
-                                style="visibility: visible; -webkit-animation-delay: 0.4s;">
-                                <img id="u_img" src="img/ab_us2.jpg" />
-                            </div>
-                            <div class="col-md-8 services-grid wow bounceIn animated vc_down"
-                                data-wow-delay="0.4s"
-                                style="visibility: visible; -webkit-animation-delay: 0.4s;">
-                                <img id="d_img" src="img/ab_us3.jpg" />
-                            </div>
+                            
+                                <img id="u_img" src="img/ab_us2.png" />
+                            
+                            
+                                <img id="d_img" src="img/ab_us3.png" />
+                            
                         </div>
                     </div>
                     <div class="clearfix"></div>

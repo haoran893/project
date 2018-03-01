@@ -1,3 +1,6 @@
+*{
+	text-transform: none !important;
+}
 body a {
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
@@ -54,6 +57,7 @@ body {
 	text-align: center;
 	/* background: #37353b;*/
 	background: #ffffff;
+	margin-bottom:0;
 }
 
 .header-top { /
@@ -309,7 +313,7 @@ span.menu {
 
 .service-section {
 	padding: 4em 0;
-	background: #red;
+	background:#fff;
 }
 
 .service-section h3 {
@@ -863,6 +867,10 @@ a.button {
 	font-weight: 600;
 	padding-top: 0.7em;
 	text-transform: capitalize;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255,255,255,.8);
 }
 
 a.button1 {
@@ -879,7 +887,7 @@ a.button1 {
 
 .service-section1 {
 	padding: 4em 0;
-	background: #37353b;
+	background: #fff;
 }
 
 .services-grid p {
@@ -2226,7 +2234,7 @@ a.b-home:hover {
 	bottom:142px !important;
 	left: -185% !important;
 	font-size:17px !important;
-	width:152% !important;
+	width:302px !important;
 	border-radius:5px !important;
 }
 
