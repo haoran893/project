@@ -1,0 +1,14 @@
+192.168.100.123:2526/tfmdc
+
+businessdata/businessdata_2017
+
+report/report_1230
+
+
+10.71.21.143:2526/tfmdc
+
+IPTION =    (ADDRESS_LIST =      (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.100.123)(PORT = 1521))    )    
+(CONNECT_DATA =      (SERVICE_NAME = ta11g)    )  )
+
+
+http://idea.imsxm.com/

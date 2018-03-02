@@ -188,7 +188,7 @@
 				<br>
 				<div class="services-grids">
 					<div class="container">
-						<form id="upload">
+						<form id="upload"  method="post" enctype="multipart/form-data" action="addform.php">
 							<div class="col-md-3">
 								<p>姓名: <input type="text" name="name"/></p>
 							</div>
@@ -217,12 +217,12 @@
 							<div class="col-md-8 services-grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 								<p style="float:left;">请上传你的作品集文件：</o>
 								<div class="upload">
-									<input type="file" />
+									<input type="file" name='file1'/>
 									<a href="javascript:void(0)">文件上传</a>
 								</div>
 							</div>
 							<div class="col-md-3 services-grid wow bounceInLeft animated" >
-								<button type="button" class="btn btn-lg btn-success" id="btn-success"> 提交资料 </button> 
+								<button type="submit" class="btn btn-lg btn-success" id="btn-success"> 提交资料 </button> 
 							</div>
 						</form>
 						
@@ -231,42 +231,7 @@
 			</div>
 		</div>
 	</div>
-	
-	<script>
-		
-		$("#btn-success").click(function(){
-			
-			if($("input[name=name]").val() == ""){
-				alert("请填写姓名")
-			}else if($("input[name=phone]").val() == ""){
-				alert("请填写电话")
-			}else{
-				var input = $("#upload .col-md-3 input");
-				var arr = [];
-				for(var i = 0; i<input.length; i++){
-//					console.log(input[i].name);
-//					console.log(input[i].value);
-					arr.push(input[i].name +":"+ input[i].value);
-				}
-				JSON.stringify(arr);
-//				console.log(arr);
-				
-				
-				$.ajax({
-					type:"POST",
-					url:"",
-					dataType:JSON,
-					data: arr,
-					success: function(data){
-						console.log(data);
-					}
-				})
-			}
-			
-			
-			
-		})
-	</script>
+
 
     <div class="categories-section">
         <div class="container">
