@@ -96,6 +96,38 @@
 		
 		text-align: left;
 	}
+	.upload{
+	    width: 10%;
+	    position: relative;
+	    background: #ABBAC3;
+	    border-radius: 4px;
+	    height: 45px;
+	    line-height: 45px;
+	    left:150px;
+	}
+	.upload input{
+	    display: block;
+	    width: 100%;
+	    height: 45px;
+	    opacity: 0;
+	    position: absolute;
+	    z-index: 3;
+	    top: 0;
+	    left: 0;
+	}
+	.upload a{
+		display: block;
+	    width: 100%;
+	    position: absolute;
+	    z-index: 2;
+	    top: 0;
+	    left: 0;
+	    text-align: center;
+	    color:white;
+	}
+	.services-grids .col-md-3{
+		margin-bottom:20px;
+	}
 </style>
 </head>
 <body>
@@ -155,84 +187,86 @@
 				<br>
 				<br>
 				<div class="services-grids">
-					<div class="service1">
-						<div class="col-md-3 services-grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-							<p>姓名：<input type="text" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}"></p>
-						</div>
-						<div class="col-md-3 services-grid wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-							<p>年龄：<input type="text" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}"></p>
-						</div>
-						<div class="col-md-3 services-grid wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-							<p>性别：<input type="text" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}"></p>
-						</div>
-						<div class="col-md-3 services-grid wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-							<p>电话：<input type="text" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}"></p>
-						</div>
-					</div>
-					
-					<div class="service1">
-						<div class="col-md-3 services-grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-							<p>学历：<input type="text" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}"></p>
-						</div>
-						<div class="col-md-3 services-grid wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-							<p>专业：<input type="text" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}"></p>
-						</div>
-						<div class="col-md-3 services-grid wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-							<p>学校：<input type="text" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}"></p>
-						</div>
-						<div class="col-md-3 services-grid wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-							<p>特长：<input type="text" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}"></p>
-						</div>
-					</div>
-
-					<div class="service1">
-						<div class="col-md-3 services-grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-							<p style="float:left;">目标学校：<input type="text" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}"></p>
-						</div>
-						<div class="col-md-3 services-grid wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-							<p>地址：<input type="text" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}"></p>
-						</div>
-						<div class="col-md-3 services-grid wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-							<p>微信：<input type="text" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}"></p>
-						</div>
-						<div class="col-md-3 services-grid wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-							<p>邮箱：<input type="text" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}"></p>
-						</div>
-					</div>
-
-					<div class="service1">
-						<div class="col-md-8 services-grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-							<p style="float:left;">希望artitask用何种方式联系您：
-							<label class="inline"><input type="checkbox" class="ace"><span class="lbl"></span></label>电话
-							<label class="inline"><input type="checkbox" class="ace"><span class="lbl"></span></label>短信
-							<label class="inline"><input type="checkbox" class="ace"><span class="lbl"></span></label>微信
-							<label class="inline"><input type="checkbox" class="ace"><span class="lbl"></span></label>邮件
-						</div>
-					</div>
-
-					<div class="service1">
-						<div class="col-md-8 services-grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-							<p style="float:left;">请上传你的作品集文件：
-							<button class="btn"><i class="ace-icon fa fa-cloud-upload bigger-100"></i>文件上传</button>
-							<label style="margin-left:30px;"><a style="cursor:pointer;">2017届大学生作品大赛.pdf</a></label>
-							<label style="margin-left:30px;">
-								<div class="progress pos-rel" data-percent="66%" style="margin-left:30px;background-color:#C4C4C4;margin-top:20px;">
-									<div class="progress-bar" style="width:66%;"></div>
+					<div class="container">
+						<form id="upload">
+							<div class="col-md-3">
+								<p>姓名: <input type="text" name="name"/></p>
+							</div>
+							<div class="col-md-3">
+								<p>电话: <input type="text" name="phone"/></p>
+							</div>
+							<div class="col-md-3">
+								<p>年龄: <input type="text" name="age"/></p>
+							</div>
+							<div class="col-md-3">
+								<p>学历: <input type="text" name="education"/></p>
+							</div>
+							<div class="col-md-3">
+								<p>专业: <input type="text" name="major"/></p>
+							</div>
+							<div class="col-md-3">
+								<p>学校: <input type="text" name="school"/></p>
+							</div>
+							<div class="col-md-3">
+								<p><span style="margin-left:-25px;">目标学校:</span> <input type="text" name="target"/></p>
+							</div>
+							<div class="col-md-3">
+								<p>微信: <input type="text" name="wx"/></p>
+							</div>
+							
+							<div class="col-md-8 services-grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+								<p style="float:left;">请上传你的作品集文件：</o>
+								<div class="upload">
+									<input type="file" />
+									<a href="javascript:void(0)">文件上传</a>
 								</div>
-							</label> 
-						</div>
+							</div>
+							<div class="col-md-3 services-grid wow bounceInLeft animated" >
+								<button type="button" class="btn btn-lg btn-success" id="btn-success"> 提交资料 </button> 
+							</div>
+						</form>
+						
 					</div>
-
-					<div class="service1">
-						<div class="col-md-3 services-grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-							<label style="margin-left:30px;"><button class="btn btn-lg btn-success"> <i class="ace-icon fa fa-check"></i> 提交资料 </button></label> 
-						</div>
-					</div>
-					<div class="clearfix"></div>
 				</div>
 			</div>
 		</div>
 	</div>
+	
+	<script>
+		
+		$("#btn-success").click(function(){
+			
+			if($("input[name=name]").val() == ""){
+				alert("请填写姓名")
+			}else if($("input[name=phone]").val() == ""){
+				alert("请填写电话")
+			}else{
+				var input = $("#upload .col-md-3 input");
+				var arr = [];
+				for(var i = 0; i<input.length; i++){
+//					console.log(input[i].name);
+//					console.log(input[i].value);
+					arr.push(input[i].name +":"+ input[i].value);
+				}
+				JSON.stringify(arr);
+//				console.log(arr);
+				
+				
+				$.ajax({
+					type:"POST",
+					url:"",
+					dataType:JSON,
+					data: arr,
+					success: function(data){
+						console.log(data);
+					}
+				})
+			}
+			
+			
+			
+		})
+	</script>
 
     <div class="categories-section">
         <div class="container">
