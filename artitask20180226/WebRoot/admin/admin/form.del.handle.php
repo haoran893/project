@@ -5,8 +5,8 @@ require_once('../connect.php');
 	$id = $_GET['id'];
 	$deletesql = "delete from form where id=$id";
 	if(mysql_query($deletesql)){
-		echo "<script>alert('删除课程成功');window.location.href='./index.html'</script>";
+		echo "<script>alert('删除成功');window.location.href='./index.html'</script>";
 	}else{
-		echo "<script>alert('删除课程失败');</script>";
+		echo "<script>alert('删除失败');</script>";
 	}
 ?>
