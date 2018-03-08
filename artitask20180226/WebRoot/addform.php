@@ -27,10 +27,10 @@
 	if(mysql_query($insertsql)){
 		echo "<script>alert('文件上传成功');window.location.href='./works_assess.html'</script>";
 	}else{
-	 	echo "error";
+	 	echo "error1";
 	}
      } else{  
-        echo "error";  
+        echo "error2";  
      }  
      
 ?> 

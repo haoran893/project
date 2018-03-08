@@ -217,12 +217,12 @@
 							<div class="col-md-8 services-grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 								<p style="float:left;">请上传你的作品集文件：</o>
 								<div class="upload">
-									<input type="file" name='file1'/>
+									<input type="file" name='up_file' id="up_file" onchange="fileChange(this)"/>
 									<a href="javascript:void(0)">文件上传</a>
 								</div>
 							</div>
 							<div class="col-md-3 services-grid wow bounceInLeft animated" >
-								<button type="submit" class="btn btn-lg btn-success" id="btn-success"> 提交资料 </button> 
+								<button type="submit" class="btn btn-lg btn-success" id="submit_upload"> 提交资料 </button> 
 							</div>
 						</form>
 						
@@ -232,6 +232,62 @@
 		</div>
 	</div>
 
+<script type="text/javascript">    
+
+function fileChange(target){  
+//检测上传文件的类型 
+var imgName = document.all.up_file.value;
+     var ext,idx;   
+    if (imgName == ''){  
+       document.all.submit_upload.disabled=true; 
+        alert("请选择需要上传的文件!");  
+        return; 
+    } else {   
+        idx = imgName.lastIndexOf(".");   
+        if (idx != -1){   
+            ext = imgName.substr(idx+1).toUpperCase();   
+            ext = ext.toLowerCase( ); 
+           // alert("ext="+ext);
+            if (ext != 'pdf'){
+              document.all.submit_upload.disabled=true;   
+                alert("只能上传.pdf 类型的文件!"); 
+                return;  
+            }   
+        }
+//      else {
+//	         document.all.submit_upload.disabled=true; 
+//	          alert("只能上传.jpg  .png  .jpeg  .gif类型的文件!"); 
+//	           return;
+//	       }   
+    }
+    
+    //检测上传文件的大小        
+    var isIE = /msie/i.test(navigator.userAgent) && !window.opera;  
+    var fileSize = 0;           
+    if (isIE && !target.files){       
+        var filePath = target.value;       
+        var fileSystem = new ActiveXObject("Scripting.FileSystemObject");          
+        var file = fileSystem.GetFile (filePath);       
+        fileSize = file.Size;      
+    } else {      
+        fileSize = target.files[0].size;       
+    }     
+
+    var size = fileSize / 1024*1024;
+
+    if(size>5242880){    
+    document.all.submit_upload.disabled=true;
+        alert("文件大小不能超过5MB");   
+    }else{
+    document.all.submit_upload.disabled=false;
+    }
+
+    // 获取文件名
+    // console.log(imgName);
+//  document.getElementById("fn").text(imgName);
+
+}     
+</script>
 
     <div class="categories-section">
         <div class="container">
